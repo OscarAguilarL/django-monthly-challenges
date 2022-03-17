@@ -4,6 +4,5 @@ from . import views
 
 # Urls de la subruta de 'challenges/'
 urlpatterns = [
-    path('january', views.january),
-    path('february', views.february)
+    path('<month>', views.monthly_challenge),
 ]
